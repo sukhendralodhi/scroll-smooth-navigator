@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigate diffrenet - section</title>
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="fixed w-full top-0 left-0">
+        <header class="text-gray-600 body-font bg-blue-200">
+            <div class="container mx-auto flex flex-wrap py-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <span class="ml-3 text-xl">Toggle Section</span>
+                </a>
+                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                    <a class="links mr-5 cursor-pointer hover:text-gray-900" href="#home">Home</a>
+                    <a class="links mr-5 cursor-pointer hover:text-gray-900" href="#two">Two</a>
+                    <a class="links mr-5 cursor-pointer hover:text-gray-900" href="#three">Three</a>
+                    <a class="links mr-5 cursor-pointer hover:text-gray-900" href="#four">Four</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="container mx-auto mt-36 space-y-2 px-2 md:mt-24 md:px-0" id="home">
+        <div
+            class="flex flex-col w-full items-center justify-center space-x-4 border-2 border-black p-2 px-4 md:flex-row">
+            <div class="w-full md:w-1/2">
+                <h1 class="text-2xl py-4 text-purple-900 font-bold">Home section</h1>
+                <img class="w-full" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="">
+            </div>
+            <div class="w-full md:w-1/2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quia natus unde, mollitia officiis
+                dignissimos velit magni perspiciatis sapiente earum illo nobis dolor ullam sequi nostrum provident
+                ducimus
+                consectetur impedit repellendus totam necessitatibus a commodi exercitationem. Optio placeat enim
+                quibusdam
+                impedit sed ullam, vel, culpa quam voluptatibus soluta voluptas voluptatum! Dolorem quod nihil tenetur
+                et.
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-4 space-y-2 px-2 md:px-0" id="two">
+        <div
+            class="flex flex-col w-full items-center justify-center space-x-4 border-2 border-black p-2 px-4 md:flex-row">
+            <div class="w-full md:w-1/2">
+                <h1 class="text-2xl py-4 text-purple-900 font-bold">Section Two</h1>
+                <img class="w-full" src="https://cdn.pixabay.com/photo/2012/08/06/00/53/bridge-53769__340.jpg" alt="">
+            </div>
+            <div class="w-full md:w-1/2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quia natus unde, mollitia officiis
+                dignissimos velit magni perspiciatis sapiente earum illo nobis dolor ullam sequi nostrum provident
+                ducimus
+                consectetur impedit repellendus totam necessitatibus a commodi exercitationem. Optio placeat enim
+                quibusdam
+                impedit sed ullam, vel, culpa quam voluptatibus soluta voluptas voluptatum! Dolorem quod nihil tenetur
+                et.
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-4 space-y-2 px-2 md:px-0" id="three">
+        <div
+            class="flex flex-col w-full items-center justify-center space-x-4 border-2 border-black p-2 px-4 md:flex-row">
+            <div class="w-full md:w-1/2">
+                <h1 class="text-2xl py-4 text-purple-900 font-bold">Section Three</h1>
+                <img class="w-full" src="https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367__340.jpg"
+                    alt="">
+            </div>
+            <div class="w-full md:w-1/2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quia natus unde, mollitia officiis
+                dignissimos velit magni perspiciatis sapiente earum illo nobis dolor ullam sequi nostrum provident
+                ducimus
+                consectetur impedit repellendus totam necessitatibus a commodi exercitationem. Optio placeat enim
+                quibusdam
+                impedit sed ullam, vel, culpa quam voluptatibus soluta voluptas voluptatum! Dolorem quod nihil tenetur
+                et.
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-4 space-y-2 px-2 md:px-0" id="four">
+        <div
+            class="flex flex-col w-full items-center justify-center space-x-4 border-2 border-black p-2 px-4 md:flex-row">
+            <div class="w-full md:w-1/2">
+                <h1 class="text-2xl py-4 text-purple-900 font-bold">Section Four</h1>
+                <img class="w-full" src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg"
+                    alt="">
+            </div>
+            <div class="w-full md:w-1/2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quia natus unde, mollitia officiis
+                dignissimos velit magni perspiciatis sapiente earum illo nobis dolor ullam sequi nostrum provident
+                ducimus
+                consectetur impedit repellendus totam necessitatibus a commodi exercitationem. Optio placeat enim
+                quibusdam
+                impedit sed ullam, vel, culpa quam voluptatibus soluta voluptas voluptatum! Dolorem quod nihil tenetur
+                et.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('.links');
+
+        for (link of links) {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const href = e.target.getAttribute("href");
+                document.querySelector(href).scrollIntoView({
+                    behavior: "smooth",
+                });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
