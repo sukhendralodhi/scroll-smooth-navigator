@@ -105,21 +105,8 @@
             </div>
         </div>
     </div>
-
-    <script>
-        const links = document.querySelectorAll('.links');
-
-        for (link of links) {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const href = e.target.getAttribute("href");
-                document.querySelector(href).scrollIntoView({
-                    behavior: "smooth",
-                });
-            });
-        }
-    </script>
-
+    <!-- JavsScript  -->
+    <script src="app.js"></script>
 </body>
 
 </html>
