@@ -25,7 +25,13 @@ const activeMenu = (e) => {
 navMenu.addEventListener("click", activeMenu);
 
 const stickyNav = () => {
+  const scrollBtn = document.getElementById('scroll-btn')
   const header = document.getElementById("header");
   header.classList.toggle("bg-gray-400", window.scrollY > 0);
+
+
+  scrollBtn.classList.toggle("visible", window.scrollY > 100);
 };
 window.addEventListener("scroll", stickyNav);
+
+
